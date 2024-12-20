@@ -1,12 +1,19 @@
-import React from 'react'
 import { Outlet } from 'react-router-dom'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 const Mainlayouts = () => {
     return (
-        <div>
-            <h1>NavBar</h1>
-            <Outlet></Outlet>
-            <h2>Footer</h2>
+        <div className='container mx-auto'>
+            <div >
+                <Navbar></Navbar>
+            </div>
+            <div className='min-h-screen '>
+                <Outlet></Outlet>
+            </div>
+            <div>
+                <Footer></Footer>
+            </div>
 
 
         </div>
